@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHILL - Beranda</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <header class="bg-gray-800 p-4 sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center space-x-4 md:space-x-8">
+                <img src="./img/Logo.png" alt="Chill Logo" class="h-8 hidden md:block">
+                <a href="#" class="text-white text-xl md:hidden">
+                    <i class="fas fa-film"></i>
+                </a>
+                <nav class="flex items-center space-x-4 md:space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-white font-semibold text-xs md:text-base">Series</a>
+                    <a href="#" class="text-gray-300 hover:text-white font-semibold text-xs md:text-base">Film</a>
+                    <a href="#" class="text-gray-300 hover:text-white font-semibold text-xs md:text-base">Daftar
+                        Saya</a>
+                </nav>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="relative group">
+                    <div class="flex items-center cursor-pointer">
+                        <img src="./img/avatar.png" alt="User Avatar" class="h-7 w-7 md:h-8 md:w-8 rounded-full">
+                        <button class="text-white focus:outline-none ml-1">
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </div>
+                    <div
+                        class="absolute right-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg py-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <a href="#"
+                            class="flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white">
+                            <i class="fas fa-user-circle mr-3"></i> Profil Saya
+                        </a>
+                        <a href="#"
+                            class="flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white">
+                            <i class="fas fa-star mr-3"></i> Ubah Premium
+                        </a>
+                        <a href="#"
+                            class="flex items-center px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white">
+                            <i class="fas fa-sign-out-alt mr-3"></i> Keluar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-8 px-0 sm:px-0 lg:px-0 relative">
+
+        <section
+            class="hero-section relative h-64 sm:h-80 md:h-96 lg:h-screen-70 bg-cover bg-center rounded-lg overflow-hidden mb-12"
+            style="background-image: url('./img/Banner.png');">
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+            <div class="absolute bottom-0 left-0 p-4 sm:p-6 md:p-8">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2 sm:mb-4">Duty After School</h1>
+                <p class="text-gray-300 text-sm sm:text-base max-w-lg sm:max-w-2xl mb-4 sm:mb-6 line-clamp-3">Sebuah
+                    benda asing di langit menjadi ancaman bagi dunia. Dalam keputusasaan, Departemen Pertahanan
+                    mulai
+                    merekrut siswa SMA untuk bertempur. Siswa-siswa dari kelas 3-2 di SMA Sungjin terpaksa menjadi
+                    pasukan cadangan dalam perang.</p>
+                <div class="flex space-x-2 sm:space-x-4">
+                    <button
+                        class="bg-white text-gray-900 font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-full flex items-center hover:bg-gray-200 transition duration-200 text-sm sm:text-base">
+                        <i class="fas fa-play mr-1 sm:mr-2"></i> Mulai
+                    </button>
+                    <button
+                        class="bg-gray-700 bg-opacity-70 text-white font-bold py-2 px-4 sm:py-3 sm:px-6 rounded-full flex items-center hover:bg-gray-600 transition duration-200 text-sm sm:text-base">
+                        <i class="fas fa-info-circle mr-1 sm:mr-2"></i> Selengkapnya
+                    </button>
+                </div>
+                <div class="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 flex items-center space-x-2">
+                    <button class="text-gray-300 hover:text-white"><i
+                            class="fas fa-volume-up text-lg sm:text-xl"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 relative px-4 sm:px-6 lg:px-8">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6">Melanjutkan Tonton Film</h2>
+            <div class="relative">
+                <div class="overflow-x-auto overflow-y-hidden scrollbar-hide" id="continue-slider">
+                    <div class="flex gap-4 pb-4">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[280px] sm:w-[288px] h-[158px] sm:h-[162px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/type1.png" alt="Film 1" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[280px] sm:w-[288px] h-[158px] sm:h-[162px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/type2.png" alt="Film 2" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[280px] sm:w-[288px] h-[158px] sm:h-[162px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/type3.png" alt="Film 3" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[280px] sm:w-[288px] h-[158px] sm:h-[162px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/type4.png" alt="Film 4" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[280px] sm:w-[288px] h-[158px] sm:h-[162px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/type5.png" alt="Film 5" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[280px] sm:w-[288px] h-[158px] sm:h-[162px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/type6.png" alt="Film 6" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[280px] sm:w-[288px] h-[158px] sm:h-[162px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/type7.png" alt="Film 7" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-nav slider-nav-left"
+                    onclick="document.getElementById('continue-slider').scrollBy({left: -300, behavior: 'smooth'})">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-nav slider-nav-right"
+                    onclick="document.getElementById('continue-slider').scrollBy({left: 300, behavior: 'smooth'})">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="mb-12 relative px-4 sm:px-6 lg:px-8">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6">Top Rating Film dan Series Hari Ini
+            </h2>
+            <div class="relative">
+                <div class="overflow-x-auto overflow-y-hidden scrollbar-hide" id="top-rating-slider">
+                    <div class="flex gap-4 pb-4">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number1.png" alt="Film 1" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number2.png" alt="Film 2" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number3.png" alt="Film 3" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number4.png" alt="Film 4" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number5.png" alt="Film 5" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number6.png" alt="Film 6" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number7.png" alt="Film 7" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number8.png" alt="Film 8" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-nav slider-nav-left"
+                    onclick="document.getElementById('top-rating-slider').scrollBy({left: -220, behavior: 'smooth'})">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-nav slider-nav-right"
+                    onclick="document.getElementById('top-rating-slider').scrollBy({left: 220, behavior: 'smooth'})">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+        <section class="mb-12 relative px-4 sm:px-6 lg:px-8">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6">Film Trending</h2>
+            <div class="relative">
+                <div class="overflow-x-auto overflow-y-hidden scrollbar-hide" id="trending-slider">
+                    <div class="flex gap-4 pb-4">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number9.png" alt="Film 9" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number10.png" alt="Film 10" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number11.png" alt="Film 11" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number12.png" alt="Film 12" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number13.png" alt="Film 13" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number14.png" alt="Film 14" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number15.png" alt="Film 15" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number16.png" alt="Film 16" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-nav slider-nav-left"
+                    onclick="document.getElementById('trending-slider').scrollBy({left: -220, behavior: 'smooth'})">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-nav slider-nav-right"
+                    onclick="document.getElementById('trending-slider').scrollBy({left: 220, behavior: 'smooth'})">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="mb-12 relative px-4 sm:px-6 lg:px-8">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6">Rilis Baru</h2>
+            <div class="relative">
+                <div class="overflow-x-auto overflow-y-hidden scrollbar-hide" id="new-release-slider">
+                    <div class="flex gap-4 pb-4">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number17.png" alt="Film 17" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number18.png" alt="Film 18" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number19.png" alt="Film 19" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number20.png" alt="Film 20" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number21.png" alt="Film 21" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number22.png" alt="Film 22" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number23.png" alt="Film 23" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div
+                                class="relative cursor-pointer w-[180px] sm:w-[200px] h-[270px] sm:h-[300px] overflow-hidden rounded-lg hover:scale-105 transition-transform duration-300">
+                                <img src="./img/number24.png" alt="Film 24" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-nav slider-nav-left"
+                    onclick="document.getElementById('new-release-slider').scrollBy({left: -220, behavior: 'smooth'})">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-nav slider-nav-right"
+                    onclick="document.getElementById('new-release-slider').scrollBy({left: 220, behavior: 'smooth'})">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-700">
+        <div
+            class="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
+            <div class="text-center md:text-left md:w-1/4">
+                <img src="./img/Logo.png" alt="Chill Logo" class="h-10 mx-auto md:mx-0 mb-3">
+                <p class="text-gray-400 text-sm">&copy;2025 Chill. All Rights Reserved. Developed by Wiryawan Pranawadigda.</p>
+            </div>
+
+            <div class="w-full md:w-1/2">
+                <input type="checkbox" id="genre-toggle" class="hidden">
+                <div class="md:hidden">
+                    <label for="genre-toggle"
+                        class="border-b border-gray-700 pb-3 mb-3 flex justify-between items-center cursor-pointer">
+                        <h4 class="font-bold text-white text-base">Genre</h4>
+                        <i class="fas fa-chevron-right text-gray-400 transform transition-transform duration-300"></i>
+                    </label>
+                </div>
+                <div
+                    class="genre-content max-h-0 overflow-hidden transition-all duration-300 md:max-h-none md:overflow-visible md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-4 md:text-left">
+                    <div class="grid grid-cols-2 gap-4 pb-4 md:contents">
+                        <div>
+                            <ul>
+                                <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">Aksi</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">Anak-anak</a>
+                                </li>
+                                <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">Anime</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">Britania</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">Drama</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">Fantasi Ilmiah
+                                        & Fantasi</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">Kejahatan</a>
+                                </li>
+                                <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">KDrama</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">Komedi</a>
+                                </li>
+                                <li><a href="#"
+                                        class="text-gray-400 hover:text-white text-sm mb-1 block">Petualangan</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">Perang</a>
+                                </li>
+                                <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">Romantis</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">Sains &
+                                        Alam</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">Thriller</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/4">
+                <input type="checkbox" id="bantuan-toggle" class="hidden">
+                <div class="md:hidden">
+                    <label for="bantuan-toggle"
+                        class="border-b border-gray-700 pb-3 mb-3 flex justify-between items-center cursor-pointer">
+                        <h4 class="font-bold text-white text-base">Bantuan</h4>
+                        <i class="fas fa-chevron-right text-gray-400 transform transition-transform duration-300"></i>
+                    </label>
+                </div>
+                <div
+                    class="bantuan-content max-h-0 overflow-hidden transition-all duration-300 md:max-h-none md:overflow-visible md:block">
+                    <div class="pb-4 md:text-left md:pb-0">
+                        <ul>
+                            <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">FAQ</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">Kontak Kami</a>
+                            </li>
+                            <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">Privasi</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white text-sm mb-1 block">Syarat &
+                                    Ketentuan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
