@@ -8,4 +8,4 @@ Tech Stack:
 - Framework CSS Tailwind
 
 Berikut Link Websitenya:
-https://mission-3b-harisenin-bootcamp-batch.vercel.app/
+https://mission-3b-chill-harisenin-bootcamp.vercel.app/
